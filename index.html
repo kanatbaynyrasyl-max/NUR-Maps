@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NUR MAPS ULTRA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/three"></script>
+<script src="https://unpkg.com/globe.gl"></script>
+</head>
+
+<body>
+
+<div id="header">🌍 NUR MAPS ULTRA</div>
+
+<div id="globeViz"></div>
+
+<div class="panel">
+  <input id="search" placeholder="Search city...">
+  <button onclick="fly()">Fly</button>
+  <button onclick="routeMode()">Route</button>
+  <button onclick="toggleUsers()">Online Users</button>
+  <div id="info">SYSTEM READY</div>
+</div>
+
+<div id="chat">
+  <div id="messages"></div>
+  <input id="chatInput" placeholder="AI command...">
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
